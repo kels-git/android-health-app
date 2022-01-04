@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--my color code-->
+    <color name="transparent">#00FFFFFF</color>
+    <color name="blue">#00AEEF</color>
+    <color name="dark_blue">#065F87</color>
+    <color name="deselected">#434343</color>
+    <color name="error">#CC3333</color>
+    <color name="placeholderTextColor">#05000000</color>
+    <color name="background">#343434</color>
+    <color name="bodyText">#666666</color>
+    <color name="digital">#0089bc</color>
+    <color name="disabled">#F3F3F3</color>
+    <color name="darkGrey">#343434</color>
+    <color name="highlight">#FFE600</color>
+    <color name="mediumGray">#D1D1D1</color>
+    <color name="positive">#15D300</color>
+    <color name="secondary">#00395d</color>
+    <color name="statusBarBg">#065F87</color>
+    <color name="text">#212529</color>
+    <color name="redHeart">#ED5754</color>
+    <color name="redSquare">#ef4100</color>
+    <color name="lighterGrey">#EBEDF0</color>
+    <color name="lighterLightGrey">#DADDE1</color>
+    <color name="lightGrey">#F2F3F5</color>
+
+</resources>

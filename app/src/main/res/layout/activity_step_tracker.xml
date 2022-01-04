@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepTrackerActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:isScrollContainer="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/healthpic2" />
+
+
+                            <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/health_loading_lottie"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/healthlottie" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dp"
+                                android:gravity="end"
+                                android:text="Health Sports"
+                                android:textColor="@color/black"
+                                android:textSize="27sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grad_black_background_cover"
+                            android:orientation="vertical"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            >
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="20dp">
+
+                                <ProgressBar
+                                    android:id="@+id/ProgressBar_step_counter_wrapper"
+                                    android:layout_width="160dp"
+                                    android:layout_height="160dp"
+                                    android:indeterminateOnly="false"
+                                    android:progress="10"
+                                    android:progressDrawable="@drawable/custom_progressbar"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.144"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/runhealth"
+                                    app:layout_constraintBottom_toTopOf="@+id/TV_StepCounter"
+                                    app:layout_constraintEnd_toEndOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintHorizontal_bias="0.476"
+                                    app:layout_constraintStart_toStartOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintTop_toTopOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintVertical_bias="1.0" />
+
+                                <TextView
+
+                                    android:id="@+id/TV_StepCounter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="60"
+                                    android:textColor="@color/white"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintEnd_toEndOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintStart_toStartOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintTop_toTopOf="@+id/ProgressBar_step_counter_wrapper" />
+
+
+                                <TextView
+
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="steps"
+                                    android:textColor="@color/blue"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintEnd_toEndOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintHorizontal_bias="0.504"
+                                    app:layout_constraintStart_toStartOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintTop_toTopOf="@+id/ProgressBar_step_counter_wrapper"
+                                    app:layout_constraintVertical_bias="0.709" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar"
+                                    android:layout_width="160dp"
+                                    android:layout_height="160dp"
+                                    android:indeterminateOnly="false"
+                                    android:progress="0"
+                                    android:progressDrawable="@drawable/custom_progressbar"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.923"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="0.0" />
+
+
+                                <TextView
+                                    android:id="@+id/TV_StepCounter_duration"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+                                    app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                                    app:layout_constraintStart_toStartOf="@+id/progressBar"
+                                    app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/durationcounter"
+                                    app:layout_constraintBottom_toTopOf="@+id/TV_StepCounter_duration"
+                                    app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                                    app:layout_constraintHorizontal_bias="0.483"
+                                    app:layout_constraintStart_toStartOf="@+id/progressBar"
+                                    app:layout_constraintTop_toTopOf="@+id/progressBar"
+                                    app:layout_constraintVertical_bias="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="mins"
+                                    android:textColor="@color/blue"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="@+id/progressBar"
+                                    app:layout_constraintHorizontal_bias="0.504"
+                                    app:layout_constraintStart_toStartOf="@+id/progressBar"
+                                    app:layout_constraintTop_toBottomOf="@+id/TV_StepCounter_duration"
+                                    app:layout_constraintVertical_bias="0.0" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:src="@drawable/measurement"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/TV_StepCounter_meter"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.0"
+                                        android:textSize="15sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_gravity="center"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="m"
+                                        android:textSize="10sp"
+                                        android:textColor="@color/blue"
+                                        android:layout_marginStart="3dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="10dp"/>
+
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_marginStart="10dp"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/calories"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/TV_StepCounter_Calories"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="0.0"
+                                        android:textSize="15sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_gravity="center"
+                                        />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="kcal"
+                                        android:textSize="10sp"
+                                        android:textColor="@color/blue"
+                                        android:layout_marginStart="3dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="10dp"/>
+
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Target"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/blue"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_gravity="center"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/TV_StepCounter_target_goal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="00"
+                                        android:textSize="15sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_gravity="center"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <TextView
+                                        android:id="@+id/TV_StepCounter_display_reset"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Walk to health"
+                                        android:background="@drawable/grad_button"
+                                        android:padding="5dp"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_gravity="center"
+                                        />
+
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="RESET"
+                                        android:background="@drawable/grad_button"
+                                        android:padding="5dp"
+                                        android:textSize="12sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_gravity="center"
+                                        android:visibility="gone"/>
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:gravity="center">
+
+
+                                    <org.eazegraph.lib.charts.BarChart
+                                        android:id="@+id/barchart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="256dp"
+                                        android:padding="10dp"
+                                        app:egFixedBarWidth="true"
+                                        app:egLegendHeight="40dp"/>
+
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/background"
+        android:gravity="center">
+
+        <include layout="@layout/main_nav_drawer" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

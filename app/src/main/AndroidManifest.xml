@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.healthappdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthAppDemo"
+        tools:replace="android:theme">
+        <activity
+            android:name=".CommentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Post_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".CountriesAffected_DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CountriesAffectedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CovidDemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WeightCheckActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FollowUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StepTrackerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShippingAddressActivity"
+            android:exported="true"
+            android:parentActivityName=".CartActivity" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfileEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PharmacyProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ExtraRecruitersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PharmacyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ContactDeveloperActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserSettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClaimHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ClaimsActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".NewsFeedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PaymentDemoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".QuotationActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DeterministicProgressBarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EligibilityTestThirdActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".EligibilityTestSecondActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EligibilityTestFirstActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:launchMode="standard"
+            tools:replace="android:launchMode" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShippingAddressActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad_blue_mix"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/backbtn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Shipping Address"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/TV_ShippingName"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@drawable/grad_button_blue"
+                android:hint="Enter Your Name "
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"/>
+
+            <EditText
+                android:id="@+id/TV_ShippingPhoneNum"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@drawable/grad_button_blue"
+                android:hint="Enter Your Phone Number "
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"/>
+
+            <EditText
+                android:id="@+id/TV_ShippingAddress"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@drawable/grad_button_blue"
+                android:hint="Enter Home Address "
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"/>
+
+            <EditText
+                android:id="@+id/TV_ShippingCity"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@drawable/grad_button_blue"
+                android:hint="Enter Your City Name"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"/>
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/Remember_Me_CheckBox_ShipCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use and Remember my previous card "
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="8dp"
+                android:padding="3dp"
+                style="@style/Material.Drawable.CheckBox"
+                app:cbd_strokeColor="@color/blue"
+
+
+                />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_Error_Msg_Shopping_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grad_error_message"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="All Fields are Required!."
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="40dp">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/blue"
+                app:cardCornerRadius="14dp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_Cart_Next_Address"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:background="@drawable/grad_button_app"
+                    android:clickable="true"
+                    android:elevation="7dp"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:requiresFadingEdge="vertical"
+                    android:translationX="1dp"
+                    android:translationY="-2dp"
+                    android:translationZ="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:id="@+id/progressBarID"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:gravity="end"
+                            android:elevation="2dp"
+                            android:src="@drawable/ic_right_arrow"
+
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">HealthAppDemo</string>
+
+    <!--    register account first page-->
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_your_account">Create Your Account</string>
+
+    <!--    First eligibility Test account page-->
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="next_to_eligibility_two">Next</string>
+
+    <!--    spinner for register User_Model eligibility check one-->
+    <string-array name="array_gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <!--    spinner for register User_Model eligibility check two smoke-->
+    <string-array name="array_smoke">
+        <item>How often do you smoke?</item>
+        <item>Heavy Smoker</item>
+        <item>Light Smoker</item>
+        <item>Never Smoke</item>
+    </string-array>
+
+    <!--    spinner for register User_Model eligibility check two drink-->
+    <string-array name="array_drink">
+        <item>How often do you drink Alcohol</item>
+        <item>Heavy drinker</item>
+        <item>Light drinker</item>
+        <item>Never drink Alcohol</item>
+    </string-array>
+
+    <!--    spinner for register User_Model eligibility check two surgery-->
+    <string-array name="array_surgery">
+        <item>Have you done any major surgery?</item>
+        <item>Yes I have</item>
+        <item>No Major Surgery</item>
+    </string-array>
+
+    <!--    spinner for register User_Model eligibility check two Covid19-->
+    <string-array name="array_Covid_19">
+        <item>Have you tested positive for Covid 19?</item>
+        <item>positive Covid19</item>
+        <item>Negative Covid19</item>
+    </string-array>
+
+    <!--    spinner for register User_Model eligibility check two exercise-->
+    <string-array name="array_exercise">
+        <item>How often do you exercise?</item>
+        <item>I do not Exercise </item>
+        <item>Once a week</item>
+        <item>Exercise Regularly</item>
+    </string-array>
+
+
+    <!--    spinner for register User_Model eligibility check two marital status-->
+    <string-array name="array_marital_status">
+        <item>Select Marital Status</item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+    </string-array>
+
+    <!--    spinner for register User_Model eligibility check two occupation-->
+    <string-array name="array_occupation">
+        <item>Select Occupation</item>
+        <item>Doctor</item>
+        <item>Accountant</item>
+        <item>Lawyer</item>
+        <item>Banker</item>
+        <item>Engineer</item>
+        <item>Politician</item>
+        <item>Software Developer</item>
+        <item>Lecturer</item>
+        <item>Army</item>
+        <item>others</item>
+    </string-array>
+
+    <!--   spinner for register User_Model eligibility check two salary-->
+    <string-array name="array_salary">
+        <item>Select Salary</item>
+        <item>100 – 2000</item>
+        <item>2000 – 4000</item>
+        <item>4000 – 8000</item>
+        <item>8000 – 15000</item>
+        <item>15000 and Above</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="edit_profile"><u>Edit</u></string>
+    <string name="enter_email_login">Enter Email</string>
+    <string name="enter_password_login">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="claims_count">claims: 0</string>
+    <string name="rm_amount_req">RM amount req</string>
+    <string name="date_claim_submit">date claim submit</string>
+    <string name="follow">follow</string>
+    <string name="what_s_on_your_mind">What\'s on your mind?</string>
+
+
+
+    <string-array name="policy_type">
+        <item>Select Policy Type</item>
+        <item>Life Coverage</item>
+        <item>Medical &amp; Hospital</item>
+    </string-array>
+
+    <string-array name="claim_type">
+        <item>Select Claim Type</item>
+        <item>Medical Practitioner</item>
+        <item>Chiropractor</item>
+        <item>Dental</item>
+        <item>General Practitioner</item>
+        <item>Physio</item>
+        <item>Specialist</item>
+    </string-array>
+
+    <string-array name="doctor_diagnose">
+        <item>Select Doctor Diagnose</item>
+        <item>Gastroenteritis</item>
+        <item>Flu/Influenza</item>
+        <item>Bronchitis</item>
+        <item>Dermatitis/Eczema</item>
+        <item>Pharyngitis/Sore Throat</item>
+        <item>Gastritis &amp; duodenitis</item>
+        <item>Common Cold</item>
+        <item>Allergic rhinitis</item>
+        <item>Hypertension</item>
+        <item>Back pain, Sciatica</item>
+        <item>Menstrual Disorder</item>
+        <item>Epigastric Pain</item>
+        <item>Disorder of Joint</item>
+        <item>Vomiting </item>
+        <item>Neck Pain</item>
+        <item>Strains of Ankle and Foot</item>
+        <item>Urinary Tract Infection</item>
+        <item>Tonsillitis</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="user_vaccination_status">
+        <item>Select vaccination status</item>
+        <item>Completely Vaccinated</item>
+        <item>Partially Vaccinated</item>
+        <item>Not-yet Vaccinated</item>
+    </string-array>
+
+</resources>

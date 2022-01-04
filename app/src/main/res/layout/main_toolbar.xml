@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grad_blue_mix">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/Menu_bar_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="ClickMenu"
+                android:src="@drawable/ic_menu_bar"
+               />
+
+            <ImageView
+                android:id="@+id/Profile_Menu_bar_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="Profile"
+                android:src="@drawable/nprofileuser"
+                android:layout_marginStart="150dp"/>
+
+            <ImageView
+                android:id="@+id/Settings_Menu_bar_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="Setting"
+                android:src="@drawable/nsettings"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

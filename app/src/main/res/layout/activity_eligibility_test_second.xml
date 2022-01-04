@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".EligibilityTestSecondActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView_MainMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout_form_register"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <Spinner
+                                android:id="@+id/SP_newUser_register_marital_status"
+                                android:layout_width="280dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/grad_button_line"
+                                android:entries="@array/array_marital_status"
+                                />
+
+                            <Spinner
+                                android:id="@+id/SP_newUser_register_occupation"
+                                android:layout_width="280dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/grad_button_line"
+                                android:entries="@array/array_occupation"
+                                />
+
+                            <Spinner
+                                android:id="@+id/SP_newUser_register_salary"
+                                android:layout_width="280dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/grad_button_line"
+                                android:entries="@array/array_salary"
+                                />
+
+                            <Spinner
+                                android:id="@+id/SP_newUser_register_covid"
+                                android:layout_width="280dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/grad_button_line"
+                                android:entries="@array/array_Covid_19"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout_display_error_User_Work"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/grad_error_message"
+                            android:elevation="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/Marital_Status_error_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineHeight="16sp"
+                                android:padding="2dp"
+                                android:text="Please Select status."
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/Occupation_error_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineHeight="16sp"
+                                android:padding="2dp"
+                                android:text="Please Select Occupation."
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/Salary_error_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lineHeight="16sp"
+                                android:padding="2dp"
+                                android:text="Please Select Salary."
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/Covid19_error_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lineHeight="16sp"
+                                android:padding="2dp"
+                                android:text="Please indicate your covid19 status."
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/error_all_field_required_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lineHeight="16sp"
+                                android:padding="2dp"
+                                android:text="All appropriate field must be selected."
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:cardBackgroundColor="@color/blue"
+                            app:cardCornerRadius="14dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/Btn_to_eligibility_Register_page_three"
+                                android:layout_width="180dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/grad_button_app"
+                                android:elevation="7dp"
+                                android:requiresFadingEdge="vertical"
+                                android:translationX="1dp"
+                                android:translationY="-2dp"
+                                android:translationZ="5dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:clickable="true"
+                                android:focusable="true"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Next"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"/>
+
+                                <ProgressBar
+                                    android:id="@+id/progressBarID"
+                                    android:layout_width="25dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginStart="10dp"
+                                    android:elevation="2dp"
+                                    android:indeterminate="true"
+                                    android:indeterminateTint="@color/white"
+                                    android:visibility="gone"
+                                    />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
